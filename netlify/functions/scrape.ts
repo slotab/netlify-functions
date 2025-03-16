@@ -74,9 +74,10 @@ export const handler: Handler = async (event) => {
     };
 
     // Convert image to base64 if available
-    let base64Image = null;
+    let base64Image: string | undefined = undefined;
     if (imageUrl) {
-      base64Image = await imageUrlToBase64(imageUrl);
+      const convertedImage = await imageUrlToBase64(imageUrl);
+      base64Image = convertedImage || undefined;
     }
 
     const scrapedData = {
