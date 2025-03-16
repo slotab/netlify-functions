@@ -7,10 +7,10 @@
     },
     "dependencies": {
         "cheerio": "^1.0.0-rc.12",
-        "node-fetch": "^2.6.9"
+        "node-fetch": "^2.6.9",
+        "@netlify/functions": "^3.0.1"       
     },
-    "devDependencies": {
-        "@netlify/functions": "^3.0.1",
+    "devDependencies": {        
         "@types/node": "^18.15.0",
         "@types/node-fetch": "^2.6.3",
         "typescript": "^4.9.5"
